@@ -178,10 +178,12 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /*
-         * Authentication
+         * Application Service Providers
          */
+        Laravel\Passport\PassportServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
-
+        Adaojunior\Passport\SocialGrantServiceProvider::class,
     ],
 
     /*
