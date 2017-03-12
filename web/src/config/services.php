@@ -38,7 +38,7 @@ return [
     'twitter' => [
         'client_id'     => env('TWITTER_APP_ID'),
         'client_secret' => env('TWITTER_APP_SECRET'),
-        'redirect'      => '',
+        'redirect'      => env('TWITTER_REDIRECT_URI'),
     ],
 
 ];

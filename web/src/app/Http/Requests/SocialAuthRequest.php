@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Laravel\Passport\Client;
-use Illuminate\Foundation\Http\FormRequest;
+use Dingo\Api\Http\FormRequest;
 
 class SocialAuthRequest extends FormRequest
 {
@@ -14,7 +14,7 @@ class SocialAuthRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**

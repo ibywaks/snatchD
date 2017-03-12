@@ -10,6 +10,12 @@ use GuzzleHttp\Exception\BadResponseException;
 
 class SocialAuthController extends Controller
 {
+    /**
+     * Issue access token from the social access token.
+     *
+     * @param  SocialAuthRequest $request
+     * @return \Illuminate\Http\Response
+     */
     public function issueToken(SocialAuthRequest $request)
     {
     	try {

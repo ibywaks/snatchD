@@ -17,8 +17,13 @@ class SocialAuthResolver implements SocialUserResolverInterface
     {
     	switch ($network) {
     		case 'twitter':
-    			# code...
+    			$resolver = new TwitterResolver($accessToken);
     			break;
+            default:
+                throw SocialGrantException::invalidNetwork();
+                break;
     	}
+
+        return $resolver->getUser();
     }
 }
